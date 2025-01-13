@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:strokeWidth="2dp"
+    android:layout_margin="10dp"
+    android:backgroundTint="@color/black"
+    app:strokeColor="?attr/themeColor">
+    
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/playlistimg"
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+        android:src="@drawable/splashscreen"
+        app:shapeAppearanceOverlay="@style/curve">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <TextView
+        android:layout_width="130dp"
+        android:id="@+id/playlistname"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="Playlist Name"
+        android:contentDescription="Playlist Name"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="130dp"
+        tools:ignore="HardcodedText">
+
+    </TextView>
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:id="@+id/playlistDlt"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="playlistDlt"
+        android:src="@drawable/delete">
+
+    </ImageButton>
+
+</com.google.android.material.card.MaterialCardView>
